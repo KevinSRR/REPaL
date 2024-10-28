@@ -60,7 +60,7 @@ You can adjust the `--dataset_dir` for running experiments over data in your spe
 
 
 
-## Definition-Based Seed Construction and First-Round of Pattern Learning w/SLM
+## Definition-Based Seed Construction and First-Round of Pattern Learning w/ SLM
 
 ```
 bash scripts/run_init.sh
@@ -91,7 +91,7 @@ Please cite the following paper if you find the code helpful!
 ```
 
 ## Acknowledgements
-- Thanks to BERTNet: https://github.com/tanyuqian/knowledge-harvest-from-lms regarding the implementation of relation definition bootstraping
+- Thanks to [BERTNet](https://github.com/tanyuqian/knowledge-harvest-from-lms) regarding the implementation of relation definition bootstraping
 - Thanks to OpenAI regarding the implementation of calling api asynchronously
 
 
