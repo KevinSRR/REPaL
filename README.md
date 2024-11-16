@@ -82,11 +82,23 @@ bash scripts/run.sh
 Please cite the following paper if you find the code helpful!
 
 ```
-@article{zhou2024grasping,
-  title={Grasping the Essentials: Tailoring Large Language Models for Zero-Shot Relation Extraction},
-  author={Zhou, Sizhe and Meng, Yu and Jin, Bowen and Han, Jiawei},
-  journal={arXiv preprint arXiv:2402.11142},
-  year={2024}
+@inproceedings{zhou-etal-2024-grasping,
+    title = "Grasping the Essentials: Tailoring Large Language Models for Zero-Shot Relation Extraction",
+    author = "Zhou, Sizhe  and
+      Meng, Yu  and
+      Jin, Bowen  and
+      Han, Jiawei",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
+    booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.emnlp-main.747",
+    pages = "13462--13486",
+    abstract = "Relation extraction (RE) aims to identify semantic relationships between entities within text. Despite considerable advancements, existing models predominantly require extensive annotated training data, which is both costly and labor-intensive to collect. Moreover, these models often struggle to adapt to new or unseen relations. Few-shot learning, aiming to lessen annotation demands, typically provides incomplete and biased supervision for target relations, leading to degraded and unstable performance. To accurately and explicitly describe relation semantics while minimizing annotation demands, we explore the definition only zero-shot RE setting where only relation definitions expressed in natural language are used to train a RE model. We introduce REPaL, comprising three stages: (1) We leverage large language models (LLMs) to generate initial seed instances from relation definitions and an unlabeled corpus. (2) We fine-tune a bidirectional Small Language Model (SLM) with initial seeds to learn relations for the target domain. (3) We expand pattern coverage and mitigate bias from initial seeds by integrating feedback from the SLM{'}s predictions on the unlabeled corpus and the synthesis history. To accomplish this, we leverage the multi-turn conversation ability of LLMs to generate new instances in follow-up dialogues, informed by both the feedback and synthesis history. Studies reveal that definition-oriented seed synthesis enhances pattern coverage whereas indiscriminately increasing seed quantity leads to performance saturation. Experiments on two datasets show REPaL significantly improved cost-effective zero-shot performance by large margins.",
 }
 ```
 
